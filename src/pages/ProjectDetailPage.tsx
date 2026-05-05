@@ -1,4 +1,5 @@
-import { FormEvent, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import type { FormEvent } from 'react'
 import { useParams } from 'react-router-dom'
 import { createTask, updateTask } from '../services/task'
 import { fetchProject, fetchProjectTasks } from '../services/project'
