@@ -1,0 +1,219 @@
+.app-shell {
+  min-height: 100vh;
+  background: #f8fbff;
+  color: #111827;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #0f172a;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.nav-brand a,
+.nav-bar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-brand a {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.nav-bar nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.page-shell {
+  max-width: 1100px;
+  margin: 1.5rem auto 3rem;
+  padding: 0 1.25rem;
+}
+
+.auth-page,
+.dashboard-page,
+.projects-page,
+.project-detail-page {
+  min-height: calc(100vh - 112px);
+}
+
+.form-card,
+.section-card,
+.project-form-card,
+.project-detail-column,
+.task-card,
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
+
+.form-card {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.form-card h1,
+.section-card h2,
+.page-heading h1 {
+  margin-bottom: 0.75rem;
+}
+
+.form-card form,
+.project-detail-column form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  background: #f8fafc;
+}
+
+button.button,
+button.button.secondary,
+a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button.button.secondary {
+  background: #475569;
+}
+
+.form-error {
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.stats-grid,
+.status-grid,
+.project-grid,
+.task-list,
+.project-detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.status-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.task-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.task-card-small {
+  flex-direction: column;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: #e2e8f0;
+  font-size: 0.85rem;
+}
+
+.project-card {
+  display: block;
+  gap: 0.65rem;
+  padding: 1.25rem;
+}
+
+.project-card strong {
+  font-size: 1rem;
+}
+
+.section-card {
+  margin-top: 1.5rem;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-heading p,
+.dashboard-header p,
+.section-card p,
+.project-card p,
+.task-card p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.project-detail-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .nav-bar,
+  .page-heading,
+  .project-detail-grid,
+  .stats-grid,
+  .status-grid {
+    grid-template-columns: 1fr;
+  }
+}
