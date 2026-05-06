@@ -16,7 +16,7 @@ export default function NavBar() {
       <div className="nav-actions">
         {user ? (
           <>
-            <span>{user.name} ({user.role})</span>
+            <span>{user.name ?? `${user.firstName ?? ''} ${user.lastName ?? ''}`.trim()} ({user.role})</span>
             <button type="button" onClick={logout} className="button secondary">
               Logout
             </button>

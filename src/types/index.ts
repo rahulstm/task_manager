@@ -2,7 +2,9 @@ export type UserRole = 'Admin' | 'Member'
 
 export type User = {
   _id?: string
-  name: string
+  firstName?: string
+  lastName?: string
+  name?: string
   email: string
   role: UserRole
 }
@@ -50,4 +52,6 @@ export type TaskCreatePayload = {
 
 export type TaskUpdatePayload = {
   status?: TaskStatus
+  priority?: TaskPriority
+  assignedTo?: string
 }
